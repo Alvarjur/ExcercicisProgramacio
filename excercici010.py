@@ -81,10 +81,7 @@ def app_run():
     global mouseInRect, rectAfectado
 
     mouseInRect = False
-    point= { "x": 15, "y": 15 }
-    
-    rect = { "x": 10, "y": 10, "width": 20, "height": 20 }
-    utils.is_point_in_rect(point, rect)
+
     for valor in rects:
         if (mouse_pos["x"] > valor[0][0] and mouse_pos["x"] < (valor[0][0] + valor[1][0]) and #Le sumo a x el valor de width (x es 0 y width es [1][0])
             mouse_pos["y"] > valor[0][1] and mouse_pos["y"] < (valor[0][1] + valor[1][1])): 
